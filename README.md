@@ -5,7 +5,6 @@ This script is for activating **Windows 10 Enterprise LTSC (Long-Term Servicing 
 ## Contents
 
 - **Activation Scripts**: Includes various scripts that can be used for activating Windows 10 Enterprise LTSC.
-- **Manual Instructions**: Step-by-step guide on how to activate Windows 10 Enterprise LTSC using different methods.
 
 ## Prerequisites
 

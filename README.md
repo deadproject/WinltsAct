@@ -18,8 +18,7 @@ Before you can use any of the tools or methods provided in this repository, you 
 - <a href="https://github.com/TMasser1" target="_blank">
     <img src="https://avatars.githubusercontent.com/TMasser1" alt="TMasser1's avatar" width="50" height="50">
   </a>
-</div>
- **TMasser1** – Project Lead and Developer 
+</div>  **TMasser1** – Project Lead and Developer 
 
 - <div style="display: flex; align-items: center;">
   <a href="https://github.com/deadproject" target="_blank">

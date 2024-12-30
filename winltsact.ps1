@@ -17,7 +17,7 @@ if (-Not (Test-Path -Path $destinationFolder)) {
 Write-Host "Cloning the repository to temporary location..."
 git clone $repoUrl $tempCloneDirectory
 
-# Define the source directories for the specific folders you want to copy
+# Define the source directories for the specific folders 
 $csvlkPackSourceFolder = "$tempCloneDirectory\csvlk-pack"
 $enterpriseSSourceFolder = "$tempCloneDirectory\EnterpriseS"
 

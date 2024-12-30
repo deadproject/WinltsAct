@@ -43,7 +43,7 @@ WinltsAct must be run in Admin mode because it performs system-wide tweaks. To a
 ### Launch Command
 
 ```ps1
-irm "coming soon" | iex
+irm "https://github.com/deadproject/WinltsAct/releases/download/v0.1/winltsact.ps1" | iex
 ```
 
 If you have Issues, refer to [Known Issues](https://github.com/deadproject/WinAct/issues)

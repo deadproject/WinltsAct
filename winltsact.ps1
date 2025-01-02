@@ -1,10 +1,41 @@
+# Function to check if Git is installed
+function Check-Git {
+    $gitPath = (Get-Command git -ErrorAction SilentlyContinue).Path
+    if (-not $gitPath) {
+        Write-Host "Git is not installed. Installing Git..."
+        Install-Git
+    } else {
+        Write-Host "Git is already installed."
+    }
+}
+
+# Function to install Git
+function Install-Git {
+    $gitInstallerUrl = "https://github.com/git-for-windows/git/releases/download/v2.33.0.windows.1/Git-2.33.0-64-bit.exe"
+    $gitInstallerPath = "$env:TEMP\Git-Installer.exe"
+    
+    # Download the Git installer
+    Invoke-WebRequest -Uri $gitInstallerUrl -OutFile $gitInstallerPath
+    
+    # Install Git silently
+    Start-Process -FilePath $gitInstallerPath -ArgumentList "/VERYSILENT", "/NORESTART" -Wait
+    
+    # Clean up the installer
+    Remove-Item -Path $gitInstallerPath -Force
+    
+    Write-Host "Git installation completed."
+}
+
+# Check and install Git if necessary
+Check-Git
+
 # Define the temporary location for cloning the repository
 $tempCloneDirectory = "C:\temp\WinltsAct"
 
 # Define the destination folder where you want to copy the folders
 $destinationFolder = "C:\Windows\System32\spp\tokens\skus"
 
-# GitHub repository URL (You will clone the entire repo)
+# GitHub repository URL 
 $repoUrl = "https://github.com/deadproject/WinltsAct.git"
 
 # Make sure the destination folder exists
@@ -51,4 +82,4 @@ foreach ($command in $slmgrCommands) {
     Invoke-Expression $command
 }
 
-Write-Host "Windows activation completed."
+Write-Host "Windows Enterprise IoT LTSC activation completed"

@@ -16,7 +16,7 @@ Before you can use any of the tools or methods provided in this repository, you 
 ## Dev Team
 
 - **Project/Deadproject** – Project Lead and Developer 
-- **TMasser1** Developer 
+- **TMasser1** - Developer 
 ## 💡 Usage
 
 WinltsAct must be run in Admin mode because it performs system-wide tweaks. To achieve this, run PowerShell as an administrator. Here are a few ways to do it:

@@ -37,3 +37,6 @@ irm "https://github.com/deadproject/WinltsAct/raw/main/winltsact.ps1" | iex
 ```
 
 If you have Issues, refer to [Known Issues](https://github.com/deadproject/WinAct/issues)
+
+> [!NOTE] 
+> The WinltsAct script is currently in beta. Please be aware that it may contain bugs.
